@@ -1,4 +1,4 @@
-const url = "http://anbo-bookstorerest.azurewebsites.net/api/books"
+const url = "https://anbo-restbookquerystring.azurewebsites.net/api/books"
 // Change to another REST url to check it's availability (CORS etc)
 
 Vue.createApp({
