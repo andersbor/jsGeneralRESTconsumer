@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.4/axios.js"></script>
     <script src="https://unpkg.com/vue@next"></script>
     <title>General REST consumer</title>
 </head>
@@ -14,7 +14,12 @@
     <h1>General REST consumer</h1>
     Check to see if CORS is available.
     <div id="app">
-        {{message}}
+        <input v-model="url" type="url" placeholder="REST url">
+        <br>
+        <button v-on:click="checkCORS(url)">Check if CORS is available (HTTP GET)</button>
+        <br>
+        Open the console panel (Ctrl Shift j) to see CORS errors, if any
+        <div>{{message}}</div>
     </div>
 
     <script src="js/index.js"></script>
