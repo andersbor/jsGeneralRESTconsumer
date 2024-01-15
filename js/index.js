@@ -30,6 +30,7 @@ Vue.createApp({
             } catch (error) {
                 this.message = error.message
                 
+                
             }
         }
     }
